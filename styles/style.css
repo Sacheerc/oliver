@@ -1,3 +1,81 @@
 body {
-    font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: bold;
+  color: #1aa7ec;
+  line-height: 129%;
+  text-shadow: 1px 1px 0 #1aa7ec, -1px -1px 0 #1aa7ec, 1px -1px 0 #1aa7ec, -1px 1px 0 #1aa7ec;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 6%;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+
+.content {
+  font-size: 20px;
+  color: #454545;
+  font-weight: 550;
+  line-height: 171.5%;
+}
+
+button {
+  background-color: #1aa7ec !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.navbar-brand {
+  color: #454545 !important;
+  font-size: 24px;
+  font-weight: 900 !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #1aa7ec !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #454545;
+}
+
+.hidden-spacer {
+  height: 56px;
+}
+
+.wrapper-section-1{
+    margin-top: 8%;
+    min-height: 650px;
+}
+
+.wrapper-section-1 img{
+    width: 650px;
+}
+
+.wrapper-section-2{
+    margin-top: 8%;
+    min-height: 550px;
+}
+
+.wrapper-section-2 .icon{
+    width: 32.78px;
+    color: #1aa7ec;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bio-image{
+    width: 360px;
+    border-radius: 15px;
+}
+
+.footer{
+    background-color: #1aa7ec;
+    min-height: 60px;
 }

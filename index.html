@@ -5,9 +5,10 @@
     <title>Oliver</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Cutom Styles -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
 
     <!-- Google Fonts - Spartan -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Spartan&display=swap">
@@ -19,11 +20,85 @@
 </head>
 
 <body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Oliver Stanciu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
     <div class="container">
-        <h1>Bootstrap!</h1>
-        <p>This is a sample paragraph using Bootstrap.</p>
-        <button class="btn btn-primary">Click me!</button>
+        <!-- Sections 1 - video-->
+        <div class="wrapper-section-1">
+            <div class="row">
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="mx-auto">
+                        <h1 class="title">Hey There, <br> I'm Oliver</h1>
+                        <p class="content">I am a hardworking individual with a passion for going above and beyond for
+                            my
+                            superiors.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-7">
+                    <img src="assets/images/img_section_1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 - bio-->
+        <div class="wrapper-section-2">
+            <h1 class="section-title text-center">About Me</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="mx-auto">
+                                <object class="icon" type="image/svg+xml" data="assets/icons/github-alt.svg">
+                                    Your browser does not support SVG
+                                </object>
+                                <object class="icon" type="image/svg+xml" data="assets/icons/linkedin-alt.svg">
+                                    Your browser does not support SVG
+                                </object>
+                                <object class="icon" type="image/svg+xml" data="assets/icons/gmail.svg">
+                                    Your browser does not support SVG
+                                </object>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <img class="bio-image" src="assets/images/Oliver_Photo_v1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="content">
+                        I am a hardworking individual with a passion for going above and beyond for my superiors. My
+                        dedication for my job includes meeting deadlines in a timely manner, handling multiple tasks
+                        efficiently, multi-tasking, using professional manners with proper vocabulary, managing my work
+                        and time accordingly, and having an utmost appreciation towards my job and employers.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer"></div>
 </body>
 
 </html>
