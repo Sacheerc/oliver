@@ -79,3 +79,63 @@ button {
     background-color: #1aa7ec;
     min-height: 60px;
 }
+
+.project-section{
+  margin-top: 8%;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+.card {
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+	display: inline-block;
+	margin-bottom: 30px;
+	vertical-align: top;
+	width: 31%;
+}
+
+.card-deck {
+	margin-top: 30px;
+}
+
+.card-img-top {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: auto;
+  border-radius: 10px !important;
+}
+
+.card:nth-child(2) .card-img-top {
+  width: 80%;
+  height: 150px; /* set a fixed height to maintain aspect ratio */
+}
+
+.card-title {
+	margin-top: 30px;
+	text-align: center;
+  color: #1aa7ec;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body .card-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-body .center-btn {
+  margin-top: 20px;
+}
