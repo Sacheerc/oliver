@@ -7,16 +7,18 @@ body {
   font-weight: bold;
   color: #1aa7ec;
   line-height: 129%;
-  text-shadow: 1px 1px 0 #1aa7ec, -1px -1px 0 #1aa7ec, 1px -1px 0 #1aa7ec, -1px 1px 0 #1aa7ec;
+  text-shadow: 1px 1px 0 #1aa7ec, -1px -1px 0 #1aa7ec, 1px -1px 0 #1aa7ec,
+    -1px 1px 0 #1aa7ec;
 }
 
 .section-title {
-    font-size: 36px;
-    font-weight: 900;
-    color: #000000;
-    margin-bottom: 6%;
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-  }
+  font-size: 36px;
+  font-weight: 900;
+  color: #000000;
+  margin-bottom: 6%;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
 
 .content {
   font-size: 20px;
@@ -29,6 +31,11 @@ button {
   background-color: #1aa7ec !important;
   border: none !important;
   border-radius: 8px !important;
+}
+
+button .icon {
+  width: 20px;
+  line-height: 20px;
 }
 
 .navbar-brand {
@@ -49,70 +56,100 @@ button {
   height: 56px;
 }
 
-.wrapper-section-1{
-    margin-top: 8%;
-    min-height: 650px;
-}
-
-.wrapper-section-1 img{
-    width: 650px;
-}
-
-.wrapper-section-2{
-    margin-top: 8%;
-    min-height: 550px;
-}
-
-.wrapper-section-2 .icon{
-    width: 32.78px;
-    color: #1aa7ec;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.bio-image{
-    width: 360px;
-    border-radius: 15px;
-}
-
-.footer{
-    background-color: #1aa7ec;
-    min-height: 60px;
-}
-
-.project-section{
+.wrapper-section-1 {
   margin-top: 8%;
+  min-height: 650px;
 }
 
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
+.wrapper-section-1 img {
+  width: 650px;
+}
+
+.wrapper-section-2 {
+  margin-top: 8%;
+  min-height: 550px;
+}
+
+.wrapper-section-2 .icon {
+  width: 32.78px;
+  color: #1aa7ec;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bio-image {
+  width: 360px;
+  border-radius: 15px;
+}
+
+footer {
+  background-color: #1aa7ec;
+  min-height: 12vh;
+  color: #fff;
+}
+
+footer .social-icon {
+  width: 25px;
+}
+
+footer .icon-text-wrapper {
+  min-height: 30px;
+}
+
+footer .contact-info {
+  min-height: 8vh;
+}
+
+footer .logo {
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+footer .logo-wrapper {
+  min-height: 12vh;
+}
+
+.icon-text-wrapper .icon {
+  padding-top: 5px;
+  width: 15px;
+}
+
+.icon-text-wrapper .icon-text {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.project-section {
+  padding-top: 8%;
+}
+
+@media (min-height: 100vh) {
+  .project-section {
+    min-height: 88vh;
   }
 }
 
 .card {
-	background-color: #fff;
-	border: 1px solid rgba(0, 0, 0, .125);
-	border-radius: .25rem;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-	display: inline-block;
-	margin-bottom: 30px;
-	vertical-align: top;
-	width: 31%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 30px;
+  vertical-align: top;
+  width: 31%;
 }
 
 .card-deck {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .card-img-top {
-	display: block;
-	margin: 0 auto;
-	width: 80%;
-	height: auto;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
   border-radius: 10px !important;
 }
 
@@ -122,8 +159,8 @@ button {
 }
 
 .card-title {
-	margin-top: 30px;
-	text-align: center;
+  margin-top: 30px;
+  text-align: center;
   color: #1aa7ec;
 }
 
@@ -134,6 +171,8 @@ button {
 .card-body .card-text {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 16px;
+  color: #454545;
 }
 
 .card-body .center-btn {
