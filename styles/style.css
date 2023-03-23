@@ -68,7 +68,7 @@ button .icon {
   min-height: 650px;
 }
 
-.wrapper-section-1 img {
+.wrapper-section-1 video {
   width: 650px;
 }
 
@@ -194,6 +194,7 @@ footer .logo-wrapper {
   .title {
     text-align: center;
     font-size: 40px;
+    margin-top: 30px;
   }
 
   .section-title {
@@ -201,7 +202,7 @@ footer .logo-wrapper {
     font-weight: 500;
   }
 
-  .wrapper-section-1 img {
+  .wrapper-section-1 video {
     width: 100%;
     margin-bottom: 30px;
   }
