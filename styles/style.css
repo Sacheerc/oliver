@@ -96,6 +96,10 @@ button .icon {
   min-height: 550px;
 }
 
+.wrapper-section-2 .content {
+  text-align: justify;
+}
+
 .wrapper-section-2 .icon {
   width: 32.78px;
   color: #1aa7ec;
