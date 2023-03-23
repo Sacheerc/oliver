@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Oliver</title>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
     <!-- Cutom Styles -->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 
@@ -14,9 +19,9 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Spartan&display=swap">
 
     <!-- jQuery -->
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -45,6 +50,9 @@
         <!-- Sections 1 - video-->
         <div class="wrapper-section-1">
             <div class="row">
+                <div class="col-md-7 display-media">
+                    <img src="assets/images/img_section_1.png" alt="">
+                </div>
                 <div class="col-md-5 d-flex align-items-center">
                     <div class="mx-auto">
                         <h1 class="title">Hey There, <br> I'm Oliver</h1>
@@ -52,9 +60,8 @@
                             my
                             superiors.</p>
                     </div>
-
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 display-web">
                     <img src="assets/images/img_section_1.png" alt="">
                 </div>
             </div>
@@ -66,20 +73,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-2 d-flex align-items-center">
+                        <div class="col-3 col-md-2 d-flex align-items-center">
                             <div class="mx-auto">
-                                <object class="icon" type="image/svg+xml" data="assets/icons/github-alt.svg">
-                                    Your browser does not support SVG
-                                </object>
-                                <object class="icon" type="image/svg+xml" data="assets/icons/linkedin-alt.svg">
-                                    Your browser does not support SVG
-                                </object>
-                                <object class="icon" type="image/svg+xml" data="assets/icons/gmail.svg">
-                                    Your browser does not support SVG
-                                </object>
+                                <div>
+                                    <object class="icon" type="image/svg+xml" data="assets/icons/github-alt.svg">
+                                        Your browser does not support SVG
+                                    </object>
+                                </div>
+                                <div><object class="icon" type="image/svg+xml" data="assets/icons/linkedin-alt.svg">
+                                        Your browser does not support SVG
+                                    </object></div>
+                                <div>
+                                    <object class="icon" type="image/svg+xml" data="assets/icons/gmail.svg">
+                                        Your browser does not support SVG
+                                    </object>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-9 col-md-10">
                             <img class="bio-image" src="assets/images/Oliver_Photo_v1.jpg" alt="">
                         </div>
                     </div>
@@ -119,21 +130,21 @@
                     </div>
                 </div>
                 <div class="col-md-4 d-flex align-items-center">
-                    <div class="mx-auto col-md-6">
+                    <div class="mx-auto col-4 col-md-6">
                         <div class="row">
-                            <div class="col-xs-4 col-md-4">
+                            <div class="col-4 col-md-4">
                                 <object class="social-icon" type="image/svg+xml"
                                     data="assets/icons/github-alt-white.svg">
                                     Your browser does not support SVG
                                 </object>
                             </div>
-                            <div class="col-xs-4 col-md-4">
+                            <div class="col-4 col-md-4">
                                 <object class="social-icon" type="image/svg+xml"
                                     data="assets/icons/linkedin-alt-white.svg">
                                     Your browser does not support SVG
                                 </object>
                             </div>
-                            <div class="col-xs-4 col-md-4">
+                            <div class="col-4 col-md-4">
                                 <object class="social-icon" type="image/svg+xml" data="assets/icons/gmail-white.svg">
                                     Your browser does not support SVG
                                 </object>
@@ -141,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-end">
+                <div class="col-md-4 d-flex align-items-center justify-content-end display-web">
                     <span class="logo">Oliver</span>
                 </div>
             </div>

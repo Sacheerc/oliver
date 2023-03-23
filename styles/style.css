@@ -38,10 +38,17 @@ button .icon {
   line-height: 20px;
 }
 
+.navbar button {
+  background-color: transparent !important;
+}
+
 .navbar-brand {
   color: #454545 !important;
   font-size: 24px;
   font-weight: 900 !important;
+}
+.navbar-light {
+  background-color: #fff;
 }
 
 .navbar-light .navbar-nav .active > .nav-link {
@@ -135,14 +142,8 @@ footer .logo-wrapper {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: inline-block;
   margin-bottom: 30px;
-  vertical-align: top;
-  width: 31%;
-}
-
-.card-deck {
-  margin-top: 30px;
+  width: 100%;
 }
 
 .card-img-top {
@@ -151,11 +152,6 @@ footer .logo-wrapper {
   width: 80%;
   height: auto;
   border-radius: 10px !important;
-}
-
-.card:nth-child(2) .card-img-top {
-  width: 80%;
-  height: 150px; /* set a fixed height to maintain aspect ratio */
 }
 
 .card-title {
@@ -177,4 +173,88 @@ footer .logo-wrapper {
 
 .card-body .center-btn {
   margin-top: 20px;
+}
+
+.display-web {
+  display: block;
+}
+
+.display-media {
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .wrapper-section-1 {
+    padding-top: 15%;
+    min-height: 0px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .section-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .wrapper-section-1 img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .content {
+    font-size: 15px;
+    color: #454545;
+    font-weight: 550;
+    line-height: 171.5%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .wrapper-section-2 {
+    margin-bottom: 20px;
+  }
+
+  .project-section {
+    margin-top: 12%;
+  }
+
+  .wrapper-section-2 .content {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 5px;
+  }
+
+  .wrapper-section-2 .icon {
+    width: 20px;
+  }
+
+  .bio-image {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .display-web {
+    display: none !important;
+  }
+
+  .display-media {
+    display: block !important;
+  }
+
+  footer .social-icon {
+    width: 20px;
+  }
+
+  footer {
+    padding-top: 10px;
+  }
 }
