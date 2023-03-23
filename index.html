@@ -51,7 +51,8 @@
         <!-- Sections 1 - video-->
         <div class="wrapper-section-1">
             <div class="row">
-                <div class="col-md-7 display-media video">
+                <div class="col-md-7 iframe-container display-media video">
+                    <img src="assets/images/loading.gif" class="loading-image-mobile">
                     <iframe width="100%" height="359" src="https://www.youtube.com/embed/dQ8JA_VcEiA"
                         title="Oliver&#39;s GitHub Portfolio Video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -64,8 +65,8 @@
                             have a few projects to share with you.</p>
                     </div>
                 </div>
-                <div class="col-md-7 display-web video">
-                    <!-- <img src="assets/images/img_section_1.png" alt=""> -->
+                <div class="col-md-7 iframe-container display-web video">
+                    <img src="assets/images/loading.gif" class="loading-image-web">
                     <iframe width="100%" height="600" src="https://www.youtube.com/embed/dQ8JA_VcEiA"
                         title="Oliver&#39;s GitHub Portfolio Video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -186,6 +187,17 @@
             <div class="text-center"><small>&copy; All rights reserved</small></div>
         </div>
     </footer>
+
+    <script>
+        const iframe = document.querySelector('iframe');
+        const loadingImageWeb = document.querySelector('.loading-image-web');
+        const loadingImageMobile = document.querySelector('.loading-image-mobile');
+
+        iframe.addEventListener('load', () => {
+            loadingImageWeb.style.display = 'none';
+            loadingImageMobile.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>
